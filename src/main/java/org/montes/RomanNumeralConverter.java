@@ -78,6 +78,17 @@ public class RomanNumeralConverter {
             number -= 1000;
         }
 
+        if (number >= 900) {
+            result.append("CM");
+            number -= 900;
+        } else if (number >= 500) {
+            result.append("D");
+            number -= 500;
+        } else if (number >= 400) {
+            result.append("CD");
+            number -= 400;
+        }
+
         return result.toString();
     }
 }
