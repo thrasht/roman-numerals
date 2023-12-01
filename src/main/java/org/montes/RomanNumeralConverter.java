@@ -17,6 +17,10 @@ public class RomanNumeralConverter {
                         pointer++;
                     }
                     break;
+                case 'V':
+                    result+=5;
+                    pointer++;
+                    break;
 
                 default:
                     pointer++;
