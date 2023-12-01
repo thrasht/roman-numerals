@@ -105,6 +105,11 @@ public class RomanNumeralConverter {
             number -= 40;
         }
 
+        while (number >= 10) {
+            result.append("X");
+            number -= 10;
+        }
+
         return result.toString();
     }
 }
