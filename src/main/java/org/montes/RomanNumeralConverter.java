@@ -110,6 +110,22 @@ public class RomanNumeralConverter {
             number -= 10;
         }
 
+        if (number == 9) {
+            result.append("IX");
+            number -= 9;
+        } else if (number >= 5) {
+            result.append("V");
+            number -= 5;
+        } else if (number == 4) {
+            result.append("IV");
+            number -= 4;
+        }
+
+        while (number > 0) {
+            result.append("I");
+            number--;
+        }
+
         return result.toString();
     }
 }

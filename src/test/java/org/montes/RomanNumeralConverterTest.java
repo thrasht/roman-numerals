@@ -56,7 +56,7 @@ public class RomanNumeralConverterTest {
         assertEquals("XLIV", converter.intToRoman(44));
         assertEquals("XVIII", converter.intToRoman(18));
         assertEquals("IV", converter.intToRoman(4));
-        assertEquals("III", converter.intToRoman(4));
+        assertEquals("III", converter.intToRoman(3));
     }
 
 }
