@@ -35,6 +35,32 @@ public class RomanNumeralConverter {
                         }
                     }
                     break;
+                case 'L':
+                    result += 50;
+                    pointer++;
+                    break;
+                case 'C':
+                    result += 100;
+                    pointer++;
+
+                    if(pointer < roman.length()){
+                        if(roman.charAt(pointer) == 'D') {
+                            result += 300;
+                            pointer++;
+                        } else if (roman.charAt(pointer) == 'M') {
+                            result += 800;
+                            pointer++;
+                        }
+                    }
+                    break;
+                case 'D':
+                    result += 500;
+                    pointer++;
+                    break;
+                case 'M':
+                    result += 1000;
+                    pointer++;
+                    break;    
 
                 default:
                     pointer++;
