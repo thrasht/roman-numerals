@@ -8,6 +8,7 @@ public class RomanNumeralConverterTest {
     @Test
     public void testRomanToInt()  {
         RomanNumeralConverter converter = new RomanNumeralConverter();
+        assertEquals(3, converter.romanToInt("III"));
         assertEquals(4, converter.romanToInt("IV"));
         assertEquals(5, converter.romanToInt("V"));
         assertEquals(8, converter.romanToInt("VIII"));
