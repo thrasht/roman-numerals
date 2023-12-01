@@ -94,6 +94,17 @@ public class RomanNumeralConverter {
             number -= 100;
         }
 
+        if (number >= 90) {
+            result.append("XC");
+            number -= 90;
+        } else if (number >= 50) {
+            result.append("L");
+            number -= 50;
+        } else if (number >= 40) {
+            result.append("XL");
+            number -= 40;
+        }
+
         return result.toString();
     }
 }
