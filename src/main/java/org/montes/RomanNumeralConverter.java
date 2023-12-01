@@ -89,6 +89,11 @@ public class RomanNumeralConverter {
             number -= 400;
         }
 
+        while (number >= 100) {
+            result.append("C");
+            number -= 100;
+        }
+
         return result.toString();
     }
 }
