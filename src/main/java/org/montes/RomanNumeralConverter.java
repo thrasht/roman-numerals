@@ -21,6 +21,20 @@ public class RomanNumeralConverter {
                     result+=5;
                     pointer++;
                     break;
+                case 'X':
+                    result+=10;
+                    pointer++;
+
+                    if(pointer < roman.length()){
+                        if(roman.charAt(pointer) == 'L') {
+                            result += 30;
+                            pointer++;
+                        } else if (roman.charAt(pointer) == 'C') {
+                            result += 80;
+                            pointer++;
+                        }
+                    }
+                    break;
 
                 default:
                     pointer++;
