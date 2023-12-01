@@ -71,6 +71,13 @@ public class RomanNumeralConverter {
     }
 
     public String intToRoman(int number) {
-        return null;
+        StringBuilder result = new StringBuilder();
+
+        while (number >= 1000) {
+            result.append("M");
+            number -= 1000;
+        }
+
+        return result.toString();
     }
 }
